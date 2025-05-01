@@ -2,97 +2,62 @@
 
 A full-stack web application for managing a college canteen, built with React, Node.js, and Supabase.
 
-## Features
+# SmartCanteen 🍽️  
+**A Smart and Sustainable Canteen Management System**
 
-- User authentication (Students and Canteen Staff)
-- Menu management
-- Order placement and tracking
-- Real-time order status updates
-- Payment integration
-- Admin dashboard
+## Overview
 
-## Prerequisites
+SmartCanteen is an integrated digital platform designed to streamline canteen operations for institutions, organizations, and food vendors. It enhances user experience and operational efficiency through features like food pre-ordering, interactive digital menus, feedback collection, waste tracking, and personalized nutrition planning.
 
-- Node.js (v14 or higher)
-- npm or yarn
-- Supabase account
+---
 
-## Environment Variables
+## 🚀 Features
 
-Create a `.env` file in the root directory with the following variables:
+- **Food Pre-ordering**  
+  Users can pre-book meals for specific dates and times, reducing wait times and food wastage.
 
-```
-NODE_ENV=development
-PORT=5000
-JWT_SECRET=your_jwt_secret_key_here
-SUPABASE_URL=your_supabase_url_here
-SUPABASE_SERVICE_KEY=your_supabase_service_key_here
-```
+- **Interactive Digital Menu**  
+  Real-time, customizable digital menus with detailed dish descriptions, ingredients, allergen info, and pricing.
 
-## Installation
+- **Feedback System**  
+  Collects and analyzes user feedback to improve food quality and service.
 
-1. Clone the repository:
+- **Waste Tracking**  
+  Monitors leftover food to generate actionable insights for reducing waste.
+
+- **Nutrition Planning**  
+  Helps users choose meals based on dietary preferences, health goals, and calorie counts.
+
+---
+
+## 🧑‍💼 Target Users
+
+- School/College Canteens  
+- Corporate Cafeterias  
+- Hospitals  
+- Government/Private Institutions
+
+---
+
+## 💡 Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB / PostgreSQL  
+- **Authentication**: JWT / OAuth  
+- **Analytics & Monitoring**: Chart.js, Prometheus (optional)  
+- **Deployment**: Docker, GitHub Actions, AWS/GCP/Azure  
+
+---
+
+## 📦 Installation
+
 ```bash
-git clone https://github.com/yourusername/xi-bit-canteen.git
-cd xi-bit-canteen
-```
-
-2. Install dependencies:
-```bash
+git clone https://github.com/your-username/smartcanteen.git
+cd smartcanteen
 npm install
-```
-
-3. Set up your environment variables as described above.
-
-4. Start the development server:
-```bash
 npm run dev
-```
 
-This will start both the backend server (port 5000) and the frontend development server (port 3000).
-
-## Project Structure
-
-```
-xi-bit-canteen/
-├── backend/
-│   ├── middleware/
-│   │   ├── auth.js
-│   │   └── role.js
-│   ├── routes/
-│   │   ├── auth.js
-│   │   ├── menu.js
-│   │   └── orders.js
-│   └── server.js
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── context/
-│   ├── hooks/
-│   └── utils/
-├── .env
-├── package.json
-└── README.md
-```
-
-## API Endpoints
-
-### Authentication
-- POST /api/auth/register - Register a new user
-- POST /api/auth/login - Login user
-- GET /api/auth/user - Get user data
-
-### Menu
-- GET /api/menu - Get all menu items
-- POST /api/menu - Add menu item (Canteen only)
-- PUT /api/menu/:id - Update menu item (Canteen only)
-- DELETE /api/menu/:id - Delete menu item (Canteen only)
-
-### Orders
-- GET /api/orders - Get user's orders
-- POST /api/orders - Create new order
-- PUT /api/orders/:id - Update order status (Canteen only)
-- GET /api/orders/canteen - Get all orders (Canteen only)
 
 ## Contributing
 
