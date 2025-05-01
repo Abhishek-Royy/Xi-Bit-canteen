@@ -64,41 +64,6 @@ npm run dev
 
 
 
-Optional Integrations:
-- OAuth / LDAP for user login
-- Google Fit / Apple HealthKit for health data
-- SMS/email for alerts & order confirmations
-
----
-
-## 🛠️ Tech Stack
-
-| Layer         | Technologies Used                     |
-|---------------|----------------------------------------|
-| Frontend      | React.js, Tailwind CSS, Flutter (optional) |
-| Backend       | Node.js, Express.js                   |
-| Database      | MongoDB / PostgreSQL                  |
-| Authentication| JWT, OAuth 2.0                        |
-| Analytics     | Chart.js, D3.js, TensorFlow.js (optional ML) |
-| Deployment    | Docker, GitHub Actions, AWS / Vercel / Heroku |
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js ≥ 16.x
-- MongoDB / PostgreSQL
-- Docker (optional for containerization)
-
-### Installation
-
-```bash
-git clone https://github.com/your-username/smartcanteen.git
-cd smartcanteen
-npm install
-npm run dev
-
 
 ## License
 
