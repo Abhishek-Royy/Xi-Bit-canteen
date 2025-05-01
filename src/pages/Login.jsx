@@ -5,14 +5,25 @@ import { useAuth } from '../context/AuthContext';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { login, error } = useAuth();
+  const [error, setError] = useState('');
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const success = await login(email, password);
-    if (success) {
-      navigate('/');
+    setError('');
+
+    try {
+      const user = await login(email, password);
+      if (user.role === 'canteen') {
+        // Redirect canteen staff to admin dashboard
+        window.location.href = 'https://canteen-admin-delight.vercel.app/';
+      } else {
+        // Redirect students to menu page
+        navigate('/menu');
+      }
+    } catch (err) {
+      setError('Invalid email or password');
     }
   };
 

@@ -31,15 +31,25 @@ const Register = () => {
       return;
     }
 
-    const success = await register(
-      formData.email,
-      formData.password,
-      formData.role,
-      formData.name
-    );
+    try {
+      const success = await register(
+        formData.email,
+        formData.password,
+        formData.role,
+        formData.name
+      );
 
-    if (success) {
-      navigate('/');
+      if (success) {
+        if (formData.role === 'canteen') {
+          // Redirect canteen admin to admin dashboard
+          window.location.href = 'https://canteen-admin-delight.vercel.app/';
+        } else {
+          // Redirect students to home page
+          navigate('/');
+        }
+      }
+    } catch (err) {
+      setError('Registration failed. Please try again.');
     }
   };
 

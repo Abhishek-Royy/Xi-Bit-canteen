@@ -1,10 +1,18 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
 import { Minus, Plus, Trash2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity, getTotal } = useCart();
+  const navigate = useNavigate();
+
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+  const handleCheckout = () => {
+    // Redirect to payment page
+    window.location.href = 'https://pay-qr-code.vercel.app/';
+  };
 
   if (cart.length === 0) {
     return (
