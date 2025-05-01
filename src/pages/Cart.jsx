@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
 import { Minus, Plus, Trash2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity, getTotal } = useCart();
@@ -73,7 +74,7 @@ const Cart = () => {
           <button
             className="mt-6 w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
-            Proceed to Checkout
+            <Link to="https://pay-qr-code.vercel.app/">Proceed to Checkout</Link>
           </button>
         </div>
       </div>
