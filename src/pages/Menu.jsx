@@ -4,14 +4,7 @@ import { Plus, Search } from 'lucide-react';
 
 // Mock menu items
 const menuItems = [
-  {
-    id: 1,
-    name: 'Veg Biryani',
-    description: 'Fragrant basmati rice cooked with mixed vegetables and aromatic spices',
-    price: 120,
-    category: 'Main Course',
-    image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
-  },
+ 
   {
     id: 2,
     name: 'Butter Chicken',

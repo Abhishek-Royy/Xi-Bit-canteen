@@ -142,7 +142,7 @@ const Home = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-blue-900">
+      {/* <div className="bg-blue-900">
         <div className="max-w-7xl mx-auto py-8 sm:py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="lg:flex lg:items-center lg:justify-between">
             <div className="text-center lg:text-left">
@@ -171,7 +171,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
