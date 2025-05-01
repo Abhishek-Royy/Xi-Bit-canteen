@@ -32,10 +32,7 @@ SmartCanteen is an integrated digital platform designed to streamline canteen op
 
 ## 🧑‍💼 Target Users
 
-- School/College Canteens  
-- Corporate Cafeterias  
-- Hospitals  
-- Government/Private Institutions
+- College Canteens  
 
 ---
 
@@ -43,10 +40,9 @@ SmartCanteen is an integrated digital platform designed to streamline canteen op
 
 - **Frontend**: React.js, Tailwind CSS  
 - **Backend**: Node.js, Express.js  
-- **Database**: MongoDB / PostgreSQL  
-- **Authentication**: JWT / OAuth  
+- **Database**: Supabase
 - **Analytics & Monitoring**: Chart.js, Prometheus (optional)  
-- **Deployment**: Docker, GitHub Actions, AWS/GCP/Azure  
+- **Deployment**: Vercal
 
 ---
 
@@ -54,7 +50,6 @@ SmartCanteen is an integrated digital platform designed to streamline canteen op
 
 ```bash
 git clone https://github.com/your-username/smartcanteen.git
-cd smartcanteen
 npm install
 npm run dev
 
