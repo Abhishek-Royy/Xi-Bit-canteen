@@ -42,7 +42,7 @@ const Register = () => {
       if (success) {
         if (formData.role === 'canteen') {
           // Redirect canteen admin to admin dashboard
-          window.location.href = 'https://canteen-admin-delight.vercel.app/';
+          window.location.href = 'https://canteen-dashboard-two.vercel.app/';
         } else {
           // Redirect students to home page
           navigate('/');
